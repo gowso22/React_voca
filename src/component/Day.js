@@ -1,6 +1,6 @@
 //api가 구성되어 있으므로 dummy를 지움
 // import dummy from "../db/data.json";
-//:day값을 받기 위해 useParams Hook을 사용
+//:day값을 받기 위해 useParams Hook을 사용!!!
 import { useEffect, useState } from 'react';
 import {useParams} from 'react-router-dom'
 import useFetch from '../hooks/useFetch';
