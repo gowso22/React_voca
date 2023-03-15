@@ -34,10 +34,13 @@ export default function Day(){
     // Custom Hooks 적용 >>  반복되는 코드가 있다면 코드를 간결하게 만들 수 있음
     const words =  useFetch(`http://localhost:3001/words?day=${day}`); 
 
+   
 
     return(
     <>
     <h2>Day {day}</h2>
+    {/* 느린 인터넷 환경 사용시 로딩화면 출력 */}
+    {words.length === 0 && <span>Loading... 중이거나 해당 일에 단어가 등록되어 있지 않습니다.</span>}
     <table>
         <tbody>
             {words.map(word =>(

@@ -32,7 +32,10 @@ export default function DayList(){
     // Custom Hooks 적용
     
     const days = useFetch('http://localhost:3001/days');
-
+     // 느린 인터넷 환경 사용시 로딩화면 출력 초기에 days는 빈배열이므로 데이터 불러오기 도중 상태 표시
+    if(days.length === 0 ){
+        return <h2>Loading...</h2>
+    }
 
     return (
         // 반복문을 map을 이용하여 작성

@@ -4,11 +4,15 @@ import Header from './component/Header';
 // react-router-dom@5.2.0 설치한 후 import
 import {BrowserRouter, Route, Switch} from 'react-router-dom' 
 import EmptyPage from './component/EmptyPage';
+import CreateWord from './component/CreateWord';
+import CreateDay from './component/CreateDay';
 
 // json server : 빠르고 쉽게 REST API 구축
 // REST API : url 주소와 메서드로 CRUD 요청을 함
 // Create : POST, Read : GET, Update : PUT, Delete : DELETE, data.json에도 적용이 되도록 가능함
 
+// Day 삭제 기능
+// Day 이동 기능
 function App() {
   return (
     // App 전체를 BrowserRouter로 감싼다
@@ -25,6 +29,12 @@ function App() {
         </Route>
         <Route path='/day/:day'>
           <Day/>
+        </Route>
+        <Route path='/create_word'>
+          <CreateWord/>
+        </Route>
+        <Route path='/create_day'>
+          <CreateDay/>
         </Route>
 
         {/*앞에 있는 조건이 만족하지 않으면 해당 페이지를 보여줌
