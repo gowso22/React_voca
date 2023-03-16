@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+본 프로젝트는 React 강의 목적으로 만들어진 영어 단어장 사이트를 학습해보는 방식으로 진행하였습니다.(출처 : https://www.youtube.com/watch?v=05uFo_-SGXU&list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
